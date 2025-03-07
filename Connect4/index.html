@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfolio of William Lu, Developer and Engineer">
+    <meta name="keywords" content="portfolio, william lu, developer, engineer, dawillu">
+
+    <meta property="og:title" content="dawillu - Portfolio">
+    <meta property="og:description" content="Discover the portfolio of William Lu, a Developer and Engineer.">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <title>connect4 · dawillu</title>
+</head>
+<body>
+    <div id="loader-container">
+        <div id="loader"></div>
+    </div>
+
+    <div id="content">
+        <div class="notch-cover">
+            <nav id="nav">
+                <div id="left-nav">
+                <a href="/index.html" class="logo">
+                    <div class="icon container" >
+                        <img id="nav-logo" src="Assets/Icons/navlogo.png"/>
+                    </div>
+                </a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="project-logo" class="project-logo">
+            <img src="Assets/Icons/projectlogo.png">
+            <div class="link-info">
+                <div>
+                    <span>Year</span>
+                    <br>
+                    2022
+                </div>
+                <div>
+                    <span>Language</span>
+                    <br>
+                    HTML CSS JS / C#
+                </div>
+                <div>
+                    <span>Site</span>
+                    <br>
+                    <a id="link" href="" target="_blank">
+                        www.connect4.com
+                    </a>
+                </div>
+            </div>
+            <div id="arrow" class="arrow"></div>
+        </div>
+
+        <div id="description-container">
+            <div class="head-title" data-animation="fade-in">
+                Strategize, Drop, Conquer—Every move leads to victory!
+            </div>
+            <div class="description-div container">
+                <div data-animation="fade-in-right">
+                    <div class="subheading-title">
+                        THE CLIENT
+                    </div>
+                    <div class="subheading-title-lable" data-animation="fade-in-left">
+                        INTERACTIVE, RESPONSIVE, USER-FRIENDLY
+                    </div>
+                    <div class="description">
+                        The client-side is built with HTML, CSS, and JavaScript, offering a smooth, interactive interface where users can play the game in real-time. It communicates with the server to send and receive game moves, ensuring a responsive experience.
+                    </div>
+                </div>
+                <div data-animation="fade-in-left">
+                    <div class="subheading-title">
+                        THE SERVER
+                    </div>
+                    <div class="subheading-title-lable" data-animation="fade-in-right">
+                        REAL-TIME, VERSATILE, SCALABLE
+                    </div>
+                    <div class="description">
+                        The server-side is developed in C# using TCP sockets, handling the game logic and maintaining the connection between players. It processes moves, updates the game state, and sends the results back to the client, ensuring seamless gameplay.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="images-container">
+            <div class="images">
+                <img src="Assets/Images/poster.png">
+            </div>
+        </div>
+
+        <a href="/TicTacToe/index.html">
+        <div class="next-project">
+            <div class="next-project-lable">
+                Next Project
+            </div>
+            <div class="next-project-arrow"></div>
+            </div>
+        </a>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

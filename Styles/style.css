@@ -1,0 +1,393 @@
+@import 'fonts.css';
+
+.font-primary { font-family: Sohne, sans-serif; }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    color: #fff;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    -ms-user-select: none;      
+    -webkit-user-select: none;  
+    user-select: none;          
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;    
+    user-drag: none; 
+    drag-and-drop: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container div {
+    margin: auto;
+}
+
+#loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a191a;
+}
+
+#loader {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    animation: spin 1.5s forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(0.5) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+#content {
+    display: none;
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#content.show {
+    opacity: 1;
+}
+
+.notch-cover {
+    position: fixed;
+    backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(env(safe-area-inset-top) + 50px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1;
+}
+
+#nav {
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(245, 238, 230, .5);
+    padding: 10px 0; 
+}
+
+#right-nav {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menu > li {
+    display: inline-block;
+}
+
+#left-nav {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#nav-logo {
+    height: 30px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.menulink {
+    position: relative;
+}
+
+.menulink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.menulink:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.head {
+    position: relative;
+    text-align: left;
+    padding: 120px 15%;
+    height: 600px;
+    min-height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .font-primary {
+    mix-blend-mode: difference;
+}
+
+.head h1 {
+    font-size: 300%;
+    font-weight: 800;
+    line-height: 0.8;
+}
+
+#commercialand {
+    display: inline;
+    font-size: 100%;
+    font-style: italic;
+}
+
+.head h2 {
+    padding-top: 15px;
+    font-size: 150%;
+    font-weight: 10;
+    line-height: 1.5;
+}
+
+#status {
+    padding-top: 15px;
+    font-family: HelveticaNowDisplay;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#projects {
+    background-size: cover;
+    background-position: center center;
+}
+
+#project-work {
+    font-family: Sohne;
+    font-weight: 1000;
+    font-size: calc(40px + 4vw);
+    padding: calc(70px + env(safe-area-inset-top)) 5% 0 5%;
+}
+
+.projects-container {
+    margin: 5%;
+    height: calc(fit-content + 50px);
+}
+
+.project {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.3vw 0;
+    font-size: 400%;
+    font-weight: 1000;
+    width: 100%;
+    line-height: 0.8;
+}
+
+#dynamic-change {
+    width: 50%;
+    margin-left: 0;
+}
+
+#dynamic-change-img {
+    opacity: 0.9;
+}
+
+#projects-title-container {
+    width: 40%;
+    margin-left: 0;
+}
+
+@media (hover: hover) {
+    .projectName:hover {
+        opacity: 0.6;
+    }
+}
+
+.projectName {
+    font-size: calc(30px + 3vw);
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    min-height: 100px;
+}
+
+@media (max-width: 700px) {
+    #dynamic-change {
+        width: 90%;
+    }
+    #projects-title-container {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .projectName {
+        height: 5%;
+        min-height: 50px;
+    }
+}
+
+#description-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: calc(env(safe-area-inset-top) + 80px);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Sohne;
+}
+
+.head-title {
+    font-weight: 400;
+    font-size: calc(15px + 2.2vw);
+    max-width: 70%;
+}
+
+#about-description-container {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.profile-pic-container {
+    width: 40%;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.hidden-grid {
+    display: none;
+    padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .padding-top {
+        padding-top: 25px;
+    }
+    #profile-pic {
+        display: none;
+    }
+    #about-description-container {
+        width: 90%;
+    }
+    .profile-pic-container {
+        width: 100%;
+    }
+    .hidden-grid {
+        display: block;
+    }
+}
+
+.subheading-title {
+    font-weight: 600;
+    font-size: calc(10px + 1vw);
+}
+
+.subheading-title-lable {
+    font-weight: 900;
+    font-size: calc(15px + 1.5vw);
+    padding-top: 5px;
+}
+
+.description {
+    font-size: calc(10px + 0.7vw);
+}
+
+.description b {
+    font-weight: 900; font-size: calc(20px + 4vw);
+}
+
+.footer {
+    height: fit-content;
+    padding: 15% 5% 10px 5%;
+}
+
+#socials {
+    margin-bottom: 27px;
+    margin-right: 0;
+}
+
+#socials a {
+    transition: 0.3s ease;
+}
+
+@media (hover: hover) {
+    #socials a:hover {
+        transform: scale(1.08);
+    }
+}
+
+.social-icon, #footer-logo{
+    height: 40px;
+    margin: 0 10px;
+}
+
+.social-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(102%) contrast(104%);
+}
+
+#title {
+    transition: 1s ease;
+    margin-bottom: 0;
+    margin-right: 20px;
+    margin-left: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    width: 0;
+}
+
+#title img {
+    height: 100px;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 620px) {
+    #title {
+        transition: 0s;
+        width: 0;
+        visibility: hidden;
+    }
+}

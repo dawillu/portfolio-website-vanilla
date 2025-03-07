@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Buch.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-BuchKursiv.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Dreiviertelfett.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-DreiviertelfettKursiv.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Extrafett.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-ExtrafettKursiv.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Extraleicht.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-ExtraleichtKursiv.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Fett.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-FettKursiv.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Halbfett.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-HalbfettKursiv.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Kräftig.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-KräftigKursiv.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-Leicht.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sohne";
+    src: url("../Fonts/Sohne/Sohne-LeichtKursiv.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
