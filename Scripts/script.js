@@ -32,11 +32,12 @@ var hoverElements = document.querySelectorAll('.projectName');
 
 const Images = [
   "/Assets/Images/dawillu.png", 
+  "/Assets/Images/dabot.png", 
   "/Assets/Images/connect4.png", 
   "/Assets/Images/tictactoe.png"
 ];
 
-const projects = ["dawillu", "connect4", "tictactoe"];
+const projects = ["dawillu", "dabot", "connect4", "tictactoe"];
 let currentIndex = 0;
 let intervalId;
 
